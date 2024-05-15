@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="/register" method="post">
+            <h1>Registration</h1>
+            <div class="input-box">
+                <input type="text" name="firstName" placeholder="Firstname" required>
+            </div>    
+            <div class="input-box">
+                <input type="text" name="lastName" placeholder="Lastname" required>
+            </div>    
+            <div class="input-box">
+                <input type="text" name="email" placeholder="Email" required>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <input type="submit" value="submit" class="btn" />
+        </form>
+    </div>
+    <script>
+        function clearForm() {
+           document.querySelector('form').reset();
+        }
+    </script>
+</body>
+</html>
